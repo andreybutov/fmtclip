@@ -9,4 +9,4 @@ fmtclip
 <the clipboard now contains code with 4-space leading indents>
 ```
 
-(yes, I know this is silly ... it was a very specific usecase)
+(yes, I know this is silly ... it was for a very specific use case)
