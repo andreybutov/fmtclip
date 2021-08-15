@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+###############################################################################
+#
+# Converts text (source code) in the clipboard from 2-space leading 
+# indentation to 4 spaces. Mac only (for now).
+#
+# Andrey Butov, 2021
+#
+###############################################################################
+
+pbpaste > /tmp/fmtclip.tmp && unexpand -t 2 /tmp/fmtclip.tmp | expand -t 4 > /tmp/fmtclip.tmp2 && pbcopy < /tmp/fmtclip.tmp2 && rm -rf /tmp/fmtclip.tmp && rm -rf /tmp/fmtclip.tmp2
